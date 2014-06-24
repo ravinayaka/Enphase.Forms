@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SampleForms.PCL.Settings" BackgroundImage="toolkit_bg.png">
+    <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+    <StackLayout Orientation="Horizontal" Spacing="10" BackgroundColor="Black" HeightRequest="60" VerticalOptions="End">
+    <Label Text="Settings" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Font="26" />
+    <Button Text= "Done" TextColor="White" Font="20" VerticalOptions="Center" Clicked="onDoneButtonClicked" />
+    </StackLayout>
+    <Label Text="Installer Toolkit Version 1.5.0" BackgroundColor="#505963" TextColor="White" HeightRequest="40" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+    <Label Text="athenatk@gmail.com" BackgroundColor="#505963" TextColor="White" HeightRequest="40" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+    <Button Text="Logout" BackgroundColor="#505963" TextColor="White" HeightRequest="40" HorizontalOptions="FillAndExpand" Clicked="onLogoutClicked"/>
+    <Button Text="Check Database" BackgroundColor="#2a5ee7" TextColor="Black" HorizontalOptions="Start"  />
+    </StackLayout>
+</ContentPage>
+

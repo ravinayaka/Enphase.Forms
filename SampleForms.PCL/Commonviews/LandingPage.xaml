@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage  Padding="20"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SampleForms.PCL.LandingPage" BackgroundColor = "White">
+
+    <StackLayout Orientation="Vertical" Spacing="10" Padding="20" VerticalOptions = "Center" HorizontalOptions = "FillAndExpand">
+	<Button  Text ="Settings" BackgroundColor="#8e8e93" TextColor="White"  Font="20" Clicked="OnSettingsButtonClicked" />
+	<Button  Text ="Connect to an Envoy" BackgroundColor="#8e8e93" TextColor="White" Font="20" Clicked="OnConnectToEnvoyClicked"  />
+    </StackLayout>
+</ContentPage>
+

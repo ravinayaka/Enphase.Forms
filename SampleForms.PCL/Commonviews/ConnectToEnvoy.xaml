@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SampleForms.PCL.ConnectToEnvoy" BackgroundColor="#343e44" >
+    <StackLayout Orientation="Vertical" BackgroundColor="#dbdbea"  HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+    <StackLayout Orientation="Horizontal" Spacing="10" BackgroundColor="Black" HorizontalOptions="FillAndExpand"  HeightRequest="60" VerticalOptions="Start" >
+    <Button Text="Back" TextColor="White" Font="20" Clicked="onBackButtonClicked"/> 
+    <Label Text="Connect To Envoy" TextColor="White" Font="24" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal" BackgroundColor="#dbdbea" HorizontalOptions="FillAndExpand" HeightRequest="40" >
+    <Label Text="Searching For Envoys..." TextColor="Black" Font="18" HorizontalOptions="FillAndExpand" />
+    <ActivityIndicator IsEnabled="true"/>
+    </StackLayout>
+<!--    <TableView BackgroundColor="#505963" HeightRequest="300"/>-->
+
+    <ListView BackgroundColor="#505963" HeightRequest="300"
+
+        x:Name="listView"
+            IsVisible="true" 
+            >
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <ViewCell.View>
+            <StackLayout Orientation="Horizontal">
+
+              <StackLayout Orientation="Vertical"
+                           HorizontalOptions="StartAndExpand"
+                           Padding="15">
+
+                <Label   Text="{Binding Name}"   TextColor="White"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center" />
+
+                <Label Text="{Binding Birthday}" />
+
+              </StackLayout>
+            </StackLayout>
+          </ViewCell.View>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+
+
+    <Label Text="Enter IP Address" BackgroundColor="#dbdbea" TextColor="Black" Font="20" HorizontalOptions="FillAndExpand"/>
+    <StackLayout Orientation="Vertical" BackgroundColor="#343e44" Spacing="10" Padding="30" HorizontalOptions="FillAndExpand" VerticalOptions="Fill" >
+    <Label Text="If the Envoy serial number doesn't appear above, you can enter its IP address (found on the LCD home screen) to connect to it."
+    		TextColor="White"
+    		Font="16"/>
+    <Entry Placeholder="Envoy IP Address" HeightRequest="40"/>
+	<Label Text="Note: this device must be on the same Wi-Fi network as the Envoy"
+			TextColor="White"
+			Font="16"/>
+	<Button Text="Connect to Envoy" TextColor="Black" HorizontalOptions="FillAndExpand" BackgroundColor="#dbdbea"/>
+    </StackLayout>
+    </StackLayout>
+</ContentPage>
+

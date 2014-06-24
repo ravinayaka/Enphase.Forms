@@ -4,15 +4,16 @@ using Xamarin.Forms;
 
 namespace SampleForms.PCL
 {	
-	public partial class SecondPage : ContentPage
+	public partial class ConnectToEnvoy : ContentPage
 	{	
-		//private ListView mListView;
-		public SecondPage ()
+		public ConnectToEnvoy ()
 		{
 			InitializeComponent ();
 			loadListView ();
-			//ListView listV = new ListView();
-				
+		}
+
+		public void onBackButtonClicked(object obj, EventArgs args){
+			Navigation.PushModalAsync(new LandingPage());
 		}
 
 		class Person
@@ -34,8 +35,6 @@ namespace SampleForms.PCL
 		// Define some data.
 		static List<Person> people = new List<Person>
 		{
-			new Person("Webview", new DateTime(1975, 1, 15), Color.Aqua),
-			new Person("Maps", new DateTime(1976, 2, 20), Color.Black),
 			new Person("Cathy", new DateTime(1977, 3, 10), Color.Blue),
 			new Person("David", new DateTime(1978, 4, 25), Color.Fuschia),
 			new Person("Eugenie", new DateTime(1979, 5, 5), Color.Gray),
@@ -62,14 +61,12 @@ namespace SampleForms.PCL
 			new Person("Zachary", new DateTime(1988, 2, 5), Color.Red)
 		};
 
+		private void loadListView(){
 
-		public void loadListView(){
 
 			listView.ItemsSource = people;
 			listView.ItemSelected +=(sender, e) => {
 
-				//DisplayAlert("SendCondPage","Test","Ok","Cancle");
-				Navigation.PushModalAsync(new WebViewSample());
 			};
 		}
 	}

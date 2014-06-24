@@ -32,16 +32,19 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Commonviews\FirstPage.xaml.cs">
-      <DependentUpon>FirstPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Commonviews\SecondPage.xaml.cs">
-      <DependentUpon>SecondPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Commonviews\WebViewSample.xaml.cs">
-      <DependentUpon>WebViewSample.xaml</DependentUpon>
-    </Compile>
     <Compile Include="BussinessLogic\Webservice.cs" />
+    <Compile Include="Commonviews\LandingPage.xaml.cs">
+      <DependentUpon>LandingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Commonviews\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Commonviews\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Commonviews\ConnectToEnvoy.xaml.cs">
+      <DependentUpon>ConnectToEnvoy.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="../packages/Xamarin.Forms.1.0.6186/build/portable-win+net45+wp80+MonoAndroid10+MonoTouch10/Xamarin.Forms.targets" />
@@ -70,13 +73,16 @@
     <Folder Include="BussinessLogic\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Commonviews\FirstPage.xaml">
+    <EmbeddedResource Include="Commonviews\LandingPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commonviews\SecondPage.xaml">
+    <EmbeddedResource Include="Commonviews\Settings.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Commonviews\WebViewSample.xaml">
+    <EmbeddedResource Include="Commonviews\LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commonviews\ConnectToEnvoy.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>

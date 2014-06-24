@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SampleForms.PCL.LoginPage" BackgroundImage="toolkit_bg.png">
+
+       <StackLayout Orientation="Vertical" Spacing="10">
+       <Frame BackgroundColor="Black" HeightRequest="23" >
+    		<Label Text="Welcome"
+           		BackgroundColor="Black"
+           		HorizontalOptions="Center"
+           		VerticalOptions="End"
+           		Font="26"
+           		TextColor="White" />
+
+       	</Frame>
+       	<StackLayout Orientation="Vertical" Padding="20" Spacing="15" BackgroundColor="#505963" VerticalOptions = "FillAndExpand" HorizontalOptions = "FillAndExpand">
+    		<Label Text="Log in to Enlighten"
+					HorizontalOptions="Center"
+					TextColor="White"
+           			Font="20" />
+			<Entry Placeholder = "Email" HeightRequest="40"/>
+					 
+			<Entry Placeholder = "Password" 
+					HeightRequest="40"
+					IsPassword ="true"/>
+			<Button  Text ="Log in" BackgroundColor="#53d769" TextColor="White"  Font="20"  Clicked="OnNextButtonClicked" />
+			<Button Text ="New User" BackgroundColor="#8e8e93" TextColor="White"  Font="20" />
+			<Label Text ="Forgot Password?" TextColor="White"  Font="20" />
+    		<Label Text="Before you can use the Installer Toolkit, you must first log in to Enlighten. After you do this once, you'll be able to work offline."
+           			TextColor="White"
+           			Font="20" />
+  		</StackLayout>
+   </StackLayout>
+    
+</ContentPage>    

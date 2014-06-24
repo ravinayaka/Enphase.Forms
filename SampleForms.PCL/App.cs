@@ -15,7 +15,7 @@ namespace SampleForms.PCL
 				},
 			};*/
 
-			return new FirstPage();
+			return new LoginPage();
 		}
 	}
 }
