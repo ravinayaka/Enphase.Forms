@@ -14,9 +14,7 @@
     <Frame BackgroundColor="#505963">
     <Label Text="athenatk@gmail.com" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
     </Frame>
-    <Frame BackgroundColor="#505963" HeightRequest="10">
-    <Button Text="Logout"  TextColor="White" HorizontalOptions="Start" Clicked="onLogoutClicked"/>
-    </Frame>
+    <Button Text="Logout" BackgroundColor="#505963" HeightRequest="40" TextColor="White" HorizontalOptions="FillAndExpand" Clicked="onLogoutClicked"/>
     <Button Text="Check Database" BackgroundColor="#2a5ee7" TextColor="Black" HorizontalOptions="Start"  />
     </StackLayout>
 </ContentPage>

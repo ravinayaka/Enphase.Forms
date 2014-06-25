@@ -3,14 +3,15 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SampleForms.PCL.LoginPage" BackgroundImage="toolkit_bg.png">
-
+    <ScrollView>
        <StackLayout Orientation="Vertical" Spacing="10">
-       <Frame BackgroundColor="Black" HeightRequest="23" >
+       <Frame BackgroundColor="Black" HeightRequest="30" >
     		<Label Text="Welcome"
+				XAlign="Center"
            		BackgroundColor="Black"
            		HorizontalOptions="Center"
            		VerticalOptions="End"
-           		Font="26"
+           		Font="24"
            		TextColor="White" />
 
        	</Frame>
@@ -32,5 +33,5 @@
            			Font="20" />
   		</StackLayout>
    </StackLayout>
-    
+   </ScrollView> 
 </ContentPage>    
